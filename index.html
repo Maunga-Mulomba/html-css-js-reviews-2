@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,500&family=Playfair+Display:wght@400;500;600&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="parent-container">
+      <div class="back-container"></div>
+      <div class="main-container">
+        <!-- BANNER -->
+        <div class="banner">
+          <h1>What others think about the product</h1>
+          <div class="banner__rating">
+            <div class="banner__rating--graphic">
+              <i class="fa-solid fa-star"></i>
+              <p id="avg-rating">0.0</p>
+            </div>
+
+            <p>
+              Average <br />
+              customer rating
+            </p>
+          </div>
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div class="input-field">
+          <div class="search">
+            <input
+              type="text"
+              name=""
+              id="search-bar"
+              placeholder="Search topics and reviews"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <button id="search-btn">SEARCH</button>
+        </div>
+
+        <p id="search-product">No product to show</p>
+
+        <!-- REVIEWS -->
+        <h2>Reviews</h2>
+        <div class="reviews">
+          <!-- 5 star rating -->
+          <p class="reviews__rank">5</p>
+          <i class="fa-solid fa-star"></i>
+          <div class="reviews__percentage">
+            <div class="progress-bar ranking" data-percent="5"></div>
+          </div>
+          <p class="reviews__number">0</p>
+
+          <!-- 4 star rating -->
+          <p class="reviews__rank">4</p>
+          <i class="fa-solid fa-star"></i>
+          <div class="reviews__percentage">
+            <div class="progress-bar ranking" data-percent="4"></div>
+          </div>
+          <p class="reviews__number">0</p>
+
+          <!-- 3 star rating -->
+          <p class="reviews__rank">3</p>
+          <i class="fa-solid fa-star"></i>
+          <div class="reviews__percentage">
+            <div class="progress-bar ranking" data-percent="3"></div>
+          </div>
+          <p class="reviews__number">0</p>
+
+          <!-- 2 star rating -->
+          <p class="reviews__rank">2</p>
+          <i class="fa-solid fa-star"></i>
+          <div class="reviews__percentage">
+            <div class="progress-bar ranking" data-percent="2"></div>
+          </div>
+          <p class="reviews__number">0</p>
+
+          <!-- 1 star rating -->
+          <p class="reviews__rank">1</p>
+          <i class="fa-solid fa-star"></i>
+          <div class="reviews__percentage">
+            <div class="progress-bar ranking" data-percent="1"></div>
+          </div>
+          <p class="reviews__number">0</p>
+        </div>
+
+        <button id="review-btn">Write a review</button>
+
+        <div class="add-review">
+          <p>Rate this product</p>
+          <div>
+            <i class="fa-solid fa-star star-rating" data-star="1"></i>
+            <i class="fa-solid fa-star star-rating" data-star="2"></i>
+            <i class="fa-solid fa-star star-rating" data-star="3"></i>
+            <i class="fa-solid fa-star star-rating" data-star="4"></i>
+            <i class="fa-solid fa-star star-rating" data-star="5"></i>
+          </div>
+          <button id="submit-btn">SUBMIT</button>
+        </div>
+
+        <div class="thank-you-msg">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Thank you for your review</p>
+            <p>Redirecting back to home page...</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
